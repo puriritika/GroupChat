@@ -18,21 +18,31 @@ public class NewGroupChat extends UiAutomatorTestCase
 
 	public void test001() throws UiObjectNotFoundException
 	
-	{
+	{ 
+		
+		
+		
 		getUiDevice().pressHome();
 		UiObject ui = new UiObject(new UiSelector().descriptionContains("Apps"));
 		ui.click();
 		
 	}
 	
+
+
 public void test002() throws UiObjectNotFoundException
+
+{
 	
-	{
-		
-		UiObject ui = new UiObject(new UiSelector().descriptionContains("Apps"));
-		ui.click();
-		
-	}
+	
+	
+	UiScrollable scr = new UiScrollable(new UiSelector());
+	UiObject dt = scr.getChildByText(new UiSelector().className("android.widget.TextView"), "hike");
+	dt.click();
+	
+	
+	
+}
 	
 //	public void testAutomation() throws UiObjectNotFoundException
 //
