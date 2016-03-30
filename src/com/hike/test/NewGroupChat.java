@@ -285,389 +285,374 @@ public void test002_hikeOpen() throws UiObjectNotFoundException
 	
 	
 
-//
-//	//Attachment menu click
-//
-//	public void testTSendImage() throws UiObjectNotFoundException 
-//	{
-//
-//		try {
-//			Thread.sleep(4000);
-//		} catch (InterruptedException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//		new UiObject(new UiSelector().className("android.support.v7.widget.LinearLayoutCompat").index(2)).
-//		getChild(new UiSelector().resourceId("com.bsb.hike:id/attachment").index(1)).click();
-//	}
-//
-//	
-//
-//	
-//	//Gallery button click
-//	public void testUGalleryOptionClick() throws UiObjectNotFoundException
-//	{
-//
-//		try {
-//			Thread.sleep(4000);
-//		} catch (InterruptedException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//		
-//		new UiObject(new UiSelector().className("android.widget.LinearLayout").index(1).instance(0)).click();
-//
-//		/*new UiObject(new UiSelector().className("android.support.v7.widget.RecyclerView").index(0)).
-//		getChild(new UiSelector().className("android.widget.RelativeLayout").index(0)).click();*/
-//	}
-//
-////	public void testUImageClickFinally() throws UiObjectNotFoundException
-////	{
-////
-////		try {
-////			Thread.sleep(4000);
-////		} catch (InterruptedException e) {
-////			// TODO Auto-generated catch block
-////			e.printStackTrace();
-////		}
-////
-////		new UiObject(new UiSelector().className("android.widget.LinearLayout").instance(0).index(1)).click();
-////	}
-//
-//
-//	//Selecting element from Photo screen
-//	
-//	public void testVPhotoEditor() throws UiObjectNotFoundException
-//	{
-//
-//		try {
-//			Thread.sleep(4000);
-//		} catch (InterruptedException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//
-//		new UiObject(new UiSelector().className("android.view.View").index(0).instance(1)).click();
-//		
-//	}
-//
-//	//Selecting image from All Photos Screen
-//	
-//	public void testWPhotoSelection() throws UiObjectNotFoundException
-//	{
-//
-//		try {
-//			Thread.sleep(4000);
-//		} catch (InterruptedException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//
-//		new UiObject(new UiSelector().className("android.view.View").index(0).instance(1)).click();
-//		
-//	}
-//
-//	//Send button click for image
-//	
-//	public void testXSendButtonClick() throws UiObjectNotFoundException
-//	{
-//
-//		try {
-//		Thread.sleep(4000);
-//		} catch (InterruptedException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//
-//		new UiObject(new UiSelector().className("android.widget.LinearLayout").index(1).instance(0)).click();
-//
-//	}
-//
-//	
-//	//Click of Send button in Image Quality
-//	
-//	public void testYSendBtnClk() throws UiObjectNotFoundException
-//	{
-//
-//		try {
-//		Thread.sleep(4000);
-//		} catch (InterruptedException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//
-//		
-//		new UiObject(new UiSelector().className("android.widget.Button").text("SEND")).click();
-//
-//	}
-//
-//	public void testZ02TverflowMenuClick() throws UiObjectNotFoundException
-//
-//	{
-//		try {
-//			Thread.sleep(4000);
-//		} catch (InterruptedException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//
-//
-//
-//		UiObject ds1 = new UiObject(new UiSelector().resourceId("com.bsb.hike:id/sticker_btn").index(0));
-//			
-//		
-//		
-//		if(ds1.exists())
-//		{
-//			System.out.println("About to click on the 3 dot menu");
-//			ds1.click();
-//		}
-//
-//
-//
-//	}
-//
-//
-//	public void testZ03UverflowMenuClick() throws UiObjectNotFoundException
-//
-//	{
-//		try {
-//			Thread.sleep(4000);
-//		} catch (InterruptedException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//
-//		UiObject ds2 = new UiObject(new UiSelector().resourceId("com.bsb.hike:id/overflowmenu").index(2));
-//
-//		System.out.println("About to click on the 3 dot menu");
-//	    ds2.click();
-//		
-//
-//
-//	}
-//	
-//	public void testZ04UverflowMenuClick() throws UiObjectNotFoundException
-//
-//	{
-//		try {
-//			Thread.sleep(4000);
-//		} catch (InterruptedException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//
-//		UiObject ds3 = new UiObject(new UiSelector().className("android.widget.LinearLayout").index(1));
-//
-//		System.out.println("About to click on the Group info option");
-//	    ds3.click();
-//		
-//
-//
-//	}
-//	
-//
-//public void testZ05VverflowMenuClick() throws UiObjectNotFoundException
-//
-//	{
-//		try {
-//			Thread.sleep(4000);
-//		} catch (InterruptedException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//
-//
-//		UiScrollable scroll =  new UiScrollable(new UiSelector().className("android.widget.ListView"));
-//
-//		UiObject ds3 = scroll.getChildByText(new UiSelector().className("android.widget.TextView"), "ADD A MEMBER") ;
-//
-//		if(ds3.exists())
-//{
-//	System.out.println("Scrolling the page begins..");
-//	//ds3.click();
-//}
-//
-//	}
-//
-//public void testZ06YverflowMenuClick() throws UiObjectNotFoundException
-//
-//	{
-//		try {
-//			Thread.sleep(4000);
-//		} catch (InterruptedException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//
-//
-//		//UiScrollable scroll =  new UiScrollable(new UiSelector().className("android.widget.ListView"));
-//
-//
-//		System.out.println("Long tapping the member..");
-//
-//		UiObject ds4 = new UiObject(new UiSelector().className("android.widget.RelativeLayout").index(0).instance(5));
-//
-//		ds4.longClick();
-//
-//
-//}
-//
-//	public void testZ07ZverflowMenuClick() throws UiObjectNotFoundException
-//
-//	{
-//		try {
-//			Thread.sleep(4000);
-//		} catch (InterruptedException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//
-//
-//		//UiScrollable scroll1 =  new UiScrollable(new UiSelector().className("android.widget.ListView"));
-//
-//		UiObject ds5 = new UiObject(new UiSelector().className("android.widget.TextView").text("Remove from group"));
-//
-//		if(ds5.exists())
-//			ds5.click();
-//		else
-//			System.out.println("failed");	
-//
-//	}
-//
-//	public void testZ08ZverflowMenuClick() throws UiObjectNotFoundException
-//	{
-//		try {
-//			Thread.sleep(4000);
-//		} catch (InterruptedException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//
-//
-//		//UiScrollable scroll1 =  new UiScrollable(new UiSelector().className("android.widget.ListView"));
-//
-//		UiObject ds6 = new UiObject(new UiSelector().className("android.widget.Button").text("YES"));
-//
-//		if(ds6.exists())
-//			ds6.click();
-//		else
-//			System.out.println("failed");
-//
-//
-//
-//
-//	}
-//	
-//public void testZ09ZverflowMenuClick() throws UiObjectNotFoundException
-//
-//	{
-//		try {
-//			Thread.sleep(4000);
-//		} catch (InterruptedException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//
-//
-//		//UiScrollable scroll1 =  new UiScrollable(new UiSelector().className("android.widget.ListView"));
-//
-//		UiObject ds7 = new UiObject(new UiSelector().className("android.widget.TextView").text("ADD A MEMBER"));
-//
-//		if(ds7.exists())
-//			ds7.click();
-//		else
-//			System.out.println("failed");
-//
-//
-//
-//
-//	}
-//
-//public void testZ10ZverflowMenuClick() throws UiObjectNotFoundException
-//
-//	{
-//		try {
-//			Thread.sleep(4000);
-//		} catch (InterruptedException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//
-//
-//		//UiScrollable scroll1 =  new UiScrollable(new UiSelector().className("android.widget.ListView"));
-//
-//		UiObject ds8 = new UiObject(new UiSelector().className("android.widget.CheckBox").index(0).instance(0));
-//
-//		if(ds8.exists())
-//			ds8.click();
-//		else
-//			System.out.println("failed");
-//
-//
-//
-//
-//}
-//
-//public void testZ11ZverflowMenuClick() throws UiObjectNotFoundException
-//
-//{
-//	try {
-//		Thread.sleep(4000);
-//	} catch (InterruptedException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//
-//
-//		//UiScrollable scroll1 =  new UiScrollable(new UiSelector().className("android.widget.ListView"));
-//
-//		UiObject ds9 = new UiObject(new UiSelector().className("android.widget.LinearLayout").index(2));
-//
-//		if(ds9.exists())
-//			ds9.click();
-//		else
-//			System.out.println("failed");
-//
-//        UiDevice deviceInstance = UiDevice.getInstance();
-//        deviceInstance.pressBack();
-//        deviceInstance.pressBack();
-//        deviceInstance.openNotification();
-//        
-//}
 
-//        public void testZ12ZverflowMenuClick() throws UiObjectNotFoundException
-//        {
-//        	
-//           UiDevice deviceInstance = UiDevice.getInstance();
-//           deviceInstance.pressBack();
-//           deviceInstance.pressBack();
-//           deviceInstance.openNotification();
-//        
-//           UiObject p = new UiObject (new UiSelector().resourceId("com.android.systemui:id/notification_stack_scroller").index(1));
-//           int t = p.getChildCount();
-//           System.out.println(t + " No. of children are");
-//           
-//        for(int i=0; i<=t; i++){
-//
-//			
-//
-//			UiObject s = p.getChild(new UiSelector().className("android.widget.FrameLayout").index(i)).getChild(new UiSelector()
-//			.className("android.widget.TextView").index(0));
-//
-//			String str = s.getText();
-//			
-//			System.out.println("Text in notification is = " + str);
-//
-//			if(str.equals("hike") || (str.equals("Tester"))){
-//
-//				s.click();
-//				break;
-//		}
-//
-//}
-//
-//}
+	//Attachment menu click
+
+	public void test011_GroupChatAttachmentMenuClick() throws UiObjectNotFoundException 
+	{
+
+		try {
+			Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		new UiObject(new UiSelector().className("android.support.v7.widget.LinearLayoutCompat").index(2)).
+		getChild(new UiSelector().resourceId("com.bsb.hike:id/attachment").index(0)).click();
+	}
+
+//	//Gallery button click
+	public void test012_GroupChatGalleryOptionClick() throws UiObjectNotFoundException
+	{
+
+		try {
+			Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		new UiObject(new UiSelector().className("android.widget.LinearLayout").index(1).instance(0)).click();
+
+		/*new UiObject(new UiSelector().className("android.support.v7.widget.RecyclerView").index(0)).
+		getChild(new UiSelector().className("android.widget.RelativeLayout").index(0)).click();*/
+	}
+
+	public void test013_GroupChatImageClickFinally() throws UiObjectNotFoundException
+	{
+
+		try {
+			Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		new UiObject(new UiSelector().className("android.widget.LinearLayout").instance(0).index(1)).click();
+	}
+
+//Selecting element from Photo screen
+
+	public void test014_GroupChatPhotoEditor() throws UiObjectNotFoundException
+	{
+
+		try {
+			Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		new UiObject(new UiSelector().className("android.view.View").index(0).instance(1)).click();
+		
+	}
+
+//	Selecting image from All Photos Screen
+//	
+	public void test015_GroupChatPhotoSelection() throws UiObjectNotFoundException
+	{
+
+		try {
+			Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		new UiObject(new UiSelector().className("android.view.View").index(0).instance(1)).click();
+		
+	}
+
+	//Send button click for image
+	
+	public void test016_GroupChatSendButtonClick() throws UiObjectNotFoundException
+	{
+
+		try {
+		Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		new UiObject(new UiSelector().className("android.widget.LinearLayout").index(1).instance(0)).click();
+
+	}
+
+	//Click of Send button in Image Quality
+	
+	public void test017_GroupChatSendBtnClk() throws UiObjectNotFoundException
+	{
+
+		try {
+		Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		
+		new UiObject(new UiSelector().className("android.widget.Button").text("SEND")).click();
+
+	}
+
+	public void test018_GroupChatStickerButtonClick() throws UiObjectNotFoundException
+
+	{
+		try {
+			Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+
+
+		UiObject ds1 = new UiObject(new UiSelector().resourceId("com.bsb.hike:id/sticker_btn").index(0));
+			
+		
+		
+		if(ds1.exists())
+		{
+			System.out.println("About to click on the 3 dot menu");
+			ds1.click();
+		}
+
+
+
+	}
+
+ public void test019_GroupChatOverflowMenuClick() throws UiObjectNotFoundException
+
+	{
+		try {
+			Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		
+		UiObject ds2 = new UiObject(new UiSelector().className("android.widget.RelativeLayout").index(1).instance(3));
+
+		System.out.println("About to click on the 3 dot menu");
+	    ds2.click();
+		
+
+
+}
+	
+	public void test020_GroupChatGroupInfoClick() throws UiObjectNotFoundException
+
+	{
+		try {
+			Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		UiObject ds3 = new UiObject(new UiSelector().className("android.widget.LinearLayout").index(1));
+
+		System.out.println("About to click on the Group info option");
+	    ds3.click();
+
+	}
+
+public void test021_GroupChatScrollGroupChatInfo() throws UiObjectNotFoundException
+
+	{
+		try {
+			Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+
+		UiScrollable scroll =  new UiScrollable(new UiSelector().className("android.widget.ListView"));
+
+		UiObject ds3 = scroll.getChildByText(new UiSelector().className("android.widget.TextView"), "ADD A MEMBER") ;
+
+		if(ds3.exists())
+{
+	System.out.println("Scrolling the page begins..");
+	//ds3.click();
+}
+
+	}
+
+public void test022_GroupChatMemberRemoval() throws UiObjectNotFoundException
+
+	{
+		try {
+			Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+
+		//UiScrollable scroll =  new UiScrollable(new UiSelector().className("android.widget.ListView"));
+
+
+		System.out.println("Long tapping the member..");
+
+		UiObject ds4 = new UiObject(new UiSelector().className("android.widget.RelativeLayout").index(0).instance(5));
+
+		ds4.longClick();
+
+
+}
+
+	public void test023_GroupChatMemberRemovalDialogClick() throws UiObjectNotFoundException
+
+	{
+		try {
+			Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+
+		//UiScrollable scroll1 =  new UiScrollable(new UiSelector().className("android.widget.ListView"));
+
+		UiObject ds5 = new UiObject(new UiSelector().className("android.widget.TextView").text("Remove from group"));
+
+		if(ds5.exists())
+			ds5.click();
+		else
+			System.out.println("failed");	
+
+	}
+
+public void test024_GroupChatYesButtonClick() throws UiObjectNotFoundException
+	{
+		try {
+			Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+
+		//UiScrollable scroll1 =  new UiScrollable(new UiSelector().className("android.widget.ListView"));
+
+		UiObject ds6 = new UiObject(new UiSelector().className("android.widget.Button").text("YES"));
+
+		if(ds6.exists())
+			ds6.click();
+		else
+			System.out.println("failed");
+
+
+
+
+	}
+	
+public void test025_GroupChatMemberAddition() throws UiObjectNotFoundException
+
+	{
+		try {
+			Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+
+		//UiScrollable scroll1 =  new UiScrollable(new UiSelector().className("android.widget.ListView"));
+
+		UiObject ds7 = new UiObject(new UiSelector().className("android.widget.TextView").text("ADD A MEMBER"));
+
+		if(ds7.exists())
+			ds7.click();
+		else
+			System.out.println("failed");
+
+	}
+
+public void test026_GroupChatGroupInfoScrollability() throws UiObjectNotFoundException
+
+	{
+		try {
+			Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+
+		//UiScrollable scroll1 =  new UiScrollable(new UiSelector().className("android.widget.ListView"));
+
+		UiObject ds8 = new UiObject(new UiSelector().className("android.widget.CheckBox").index(0).instance(0));
+
+		if(ds8.exists())
+			ds8.click();
+		else
+			System.out.println("failed");
+
+}
+
+public void test027_GroupChatDoneButtonClick() throws UiObjectNotFoundException
+
+{
+	try {
+		Thread.sleep(4000);
+	} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+
+		//UiScrollable scroll1 =  new UiScrollable(new UiSelector().className("android.widget.ListView"));
+
+		UiObject ds9 = new UiObject(new UiSelector().className("android.widget.LinearLayout").index(2));
+
+		if(ds9.exists())
+			ds9.click();
+		else
+			System.out.println("failed");
+        UiDevice deviceInstance = UiDevice.getInstance();
+        deviceInstance.pressBack();
+        deviceInstance.pressBack();
+        deviceInstance.openNotification();
+       
+}
+
+      public void test028_GroupChatAppExit() throws UiObjectNotFoundException
+        {
+       	
+           UiDevice deviceInstance = UiDevice.getInstance();
+           deviceInstance.pressBack();
+           deviceInstance.pressBack();
+           deviceInstance.openNotification();
+        
+           UiObject p = new UiObject (new UiSelector().resourceId("com.android.systemui:id/notification_stack_scroller").index(1));
+           int t = p.getChildCount();
+           System.out.println(t + " No. of children are");
+           
+        for(int i=0; i<=t; i++){
+
+			
+
+			UiObject s = p.getChild(new UiSelector().className("android.widget.FrameLayout").index(i)).getChild(new UiSelector()
+			.className("android.widget.TextView").index(0));
+
+			String str = s.getText();
+			
+			System.out.println("Text in notification is = " + str);
+
+			if(str.equals("hike") || (str.equals("Tester"))){
+
+				s.click();
+				break;
+		}
+
+}
+
+}
 
 }
 
