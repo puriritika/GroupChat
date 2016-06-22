@@ -26,6 +26,8 @@ public class NewGroupChat extends UiAutomatorTestCase
 		
 		getUiDevice().pressHome();
 		UiObject ui = new UiObject(new UiSelector().descriptionContains("Apps"));
+		assertNotNull(ui); 
+		
 		ui.click();
 		
 	}
@@ -39,7 +41,10 @@ public void test002_hikeOpen() throws UiObjectNotFoundException
 	
 	
 	UiScrollable scr = new UiScrollable(new UiSelector());
+	scr.setAsHorizontalList();
 	UiObject dt = scr.getChildByText(new UiSelector().className("android.widget.TextView"), "hike");
+	//UiObject st = scr.scrollIntoView(new UiSelector().className("android.widget.TextView"), "hike");
+	//assertNotNull(dt);
 	dt.click();
 	
 	
@@ -97,16 +102,21 @@ public void test002_hikeOpen() throws UiObjectNotFoundException
 				getChild(new UiSelector().className("android.widget.LinearLayout").index(0)).
 				getChild(new UiSelector().className("android.widget.ListView").index(0)).
 				getChild(new UiSelector().className("android.widget.LinearLayout").index(1));
+		
+		//rs.exists()
 
-		if(rs.exists())
-		{
-			rs.click();
-		}
-		else
-		{
-			System.out.println("Incorect input");
-		}
-
+		assertNotNull(rs);
+		rs.click();
+//		if(assertNotNull(rs))
+//		{
+//			rs.click();
+//		}
+//		else
+//		{
+//			System.out.println("Incorect input");
+//		}
+//
+//	}
 	}
 
 	//Group chat creation screen
@@ -223,7 +233,7 @@ public void test002_hikeOpen() throws UiObjectNotFoundException
 	}
 
 
-	public void test008_UiWatcherRegister() throws UiObjectNotFoundException
+public void test008_UiWatcherRegister() throws UiObjectNotFoundException
 	{
 	// Register watcher
 		
@@ -241,6 +251,7 @@ public void test002_hikeOpen() throws UiObjectNotFoundException
 
 		
 	}	
+	
 
 
 	public void test010_GroupChatSendMsg() throws UiObjectNotFoundException
@@ -254,9 +265,13 @@ public void test002_hikeOpen() throws UiObjectNotFoundException
 			e.printStackTrace();
 		}
 
-		new UiObject(new UiSelector().className("android.widget.RelativeLayout").index(2)).
-		getChild(new UiSelector().className("android.widget.RelativeLayout").index(0)).
-		getChild(new UiSelector().resourceId("com.bsb.hike:id/send_message")).click();
+//		new UiObject(new UiSelector().className("android.widget.RelativeLayout").index(2)).
+//		getChild(new UiSelector().className("android.widget.RelativeLayout").index(0)).
+//		getChild(new UiSelector().resourceId("com.bsb.hike:id/send_message")).click();
+		
+		//Press button to send Message
+		
+		new UiObject(new UiSelector().description("Press button to send Message")).click();
 
 		System.out.println("clicked on send button");
 
@@ -284,8 +299,7 @@ public void test002_hikeOpen() throws UiObjectNotFoundException
 	};
 	
 	
-
-
+	
 	//Attachment menu click
 
 	public void test011_GroupChatAttachmentMenuClick() throws UiObjectNotFoundException 
@@ -297,8 +311,10 @@ public void test002_hikeOpen() throws UiObjectNotFoundException
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		new UiObject(new UiSelector().className("android.support.v7.widget.LinearLayoutCompat").index(2)).
-		getChild(new UiSelector().resourceId("com.bsb.hike:id/attachment").index(0)).click();
+//		new UiObject(new UiSelector().className("android.support.v7.widget.LinearLayoutCompat").index(2)).
+//		getChild(new UiSelector().resourceId("com.bsb.hike:id/attachment").index(0)).click();
+		
+		new UiObject(new UiSelector().resourceId("com.bsb.hike:id/attachment").index(1)).click();
 	}
 
 //	//Gallery button click
@@ -365,15 +381,11 @@ public void test002_hikeOpen() throws UiObjectNotFoundException
 
 	//Send button click for image
 	
-	public void test016_GroupChatSendButtonClick() throws UiObjectNotFoundException
+	public void test016_GroupChatSendButtonClick() throws UiObjectNotFoundException,InterruptedException
 	{
 
-		try {
 		Thread.sleep(4000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
 
 		new UiObject(new UiSelector().className("android.widget.LinearLayout").index(1).instance(0)).click();
 
@@ -433,7 +445,7 @@ public void test002_hikeOpen() throws UiObjectNotFoundException
 		}
 
 		
-		UiObject ds2 = new UiObject(new UiSelector().className("android.widget.RelativeLayout").index(1).instance(3));
+		UiObject ds2 = new UiObject(new UiSelector().resourceId("com.bsb.hike:id/overflowmenu"));
 
 		System.out.println("About to click on the 3 dot menu");
 	    ds2.click();
@@ -453,7 +465,9 @@ public void test002_hikeOpen() throws UiObjectNotFoundException
 		}
 
 		UiObject ds3 = new UiObject(new UiSelector().className("android.widget.LinearLayout").index(1));
-
+		
+		
+        assertNotNull(ds3);
 		System.out.println("About to click on the Group info option");
 	    ds3.click();
 
@@ -641,6 +655,7 @@ public void test027_GroupChatDoneButtonClick() throws UiObjectNotFoundException
 			.className("android.widget.TextView").index(0));
 
 			String str = s.getText();
+			//assertEquals(s,"hike");
 			
 			System.out.println("Text in notification is = " + str);
 
